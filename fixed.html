@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fixed Position Elements Reveal On Scroll</title>
+	<style>
+		body {
+			height: 2000px;
+			margin: 0;
+			padding: 0;
+		}
+
+		h2, p {
+			padding: 20px;
+			margin: 0;
+		}
+
+		h2 {
+			position: fixed;
+			top: -100px; /* set the top value to the height of the fixed element */
+			left: 0;
+			width: 100%;
+			height: 100px;
+			background-color: #333;
+			color: #fff;
+			text-align: center;
+			font-size: 24px;
+			line-height: 100px;
+			transition: top 0.5s ease-in-out;
+		}
+
+		.active {
+			top: 0;
+		}
+	</style>
+</head>
+<body>
+	<h2>Header 1</h2>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac nulla vitae urna tristique congue. Fusce vel ullamcorper ipsum. </p>
+
+	<h2>Header 2</h2>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac nulla vitae urna tristique congue. Fusce vel ullamcorper ipsum. </p>
+
+	<h2>Header 3</h2>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac nulla vitae urna tristique congue. Fusce vel ullamcorper ipsum. </p>
+
+	<script>
+		var headers = document.querySelectorAll('h2');
+		var paragraphs = document.querySelectorAll('p');
+
+		window.addEventListener('scroll', revealElements);
+
+		function revealElements() {
+			for (var i = 0; i < headers.length; i++) {
+				var windowHeight = window.innerHeight;
+				var elementTop = headers[i].getBoundingClientRect().top;
+				var elementVisible = 500;
+
+				if (elementTop < windowHeight - elementVisible) {
+					headers[i].classList.add('active');
+				} else {
+					headers[i].classList.remove('active');
+				}
+			}
+
+			for (var i = 0; i < paragraphs.length; i++) {
+				var windowHeight = window.innerHeight;
+				var elementTop = paragraphs[i].getBoundingClientRect().top;
+				var elementVisible = 500;
+
+				if (elementTop < windowHeight - elementVisible) {
+					paragraphs[i].classList.add('active');
+				} else {
+					paragraphs[i].classList.remove('active');
+				}
+			}
+		}
+	</script>
+</body>
+</html>

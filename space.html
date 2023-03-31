@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">    
+    <title>Being Academy</title>
+    <link rel="icon" type="image/x-icon" href="images/hero/fav.ico">
+</head>
+<body>
+  <header>
+    <!--logo
+    <a href="#" class="logo"><img src="images/logo1.webp" alt="logo1"></a>-->
+    <!--main Navigatiomn-->
+    <nav>            
+      <div class="menu">
+        <div class="menu__container" onclick="myFunction(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>        
+        <ul class="list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="journey.html">Journey</a></li>
+          <li><a href="#">The Space</a></li>
+          <li><a href="steps.html">Steps</a></li>
+          <li><a href="process.html">Process</a></li>
+          <li><a href="why.html">Why</a></li>
+          <li><a href="forwhom.html">For Whom</a></li>
+          <li><a href="bywhom.html">By Whom</a></li>
+          <li><a href="program.html">Logistics</a></li>
+          <li><a href="link.html">Links</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </div>           
+    </nav> 		
+    <!--sidebar-->	      
+  </header>
+  <!-- hero section-->
+  <section id="space">      
+    <div class="space__container">
+      <h1>The Space</h1>
+      <div class="space__box reveal">
+        <p>The Being Academy is being imagined/ evolved/ designed to create condition for regaining our capacity to use senses, to experience the world, to be present, to regain the wonder, innocence, trust, the playfulness, to be spontaneous, genuine, authentic, to be in awe with the world to be in the world. </p>
+        <p>This means creating conditions for becoming a learner, for re-claiming qualities, attitudes, skills needed to learn the real world.</p> 
+        <p>The external space is only a means and it is the internal space that matters finally </p>
+      </div>
+  </section>
+  <section id="space__cards">
+    <div class="cards__container">
+      <div class="cards__content">
+        <p>Rooting to our contexts.</p>
+        <p>Recover the naturl cognitive foundation</p>
+        <p>LEARN THE WORLD; NOT THE WORD</p>
+      </div>
+    </div>
+    <!--<div class="cards__container">
+      <div class="c1">
+        <button data-modal-trigger="form-modal" class="form__btn form__btn --secondary">Collaborate</button>       
+      </div>     
+      <div class="c2">
+        <button data-modal-trigger="form-modal1" class="form__btn form__btn --secondary">join Us</button>     
+      </div>
+      <div class="c3">
+        <button data-modal-trigger="form-modal2" class="form__btn form__btn --secondary">Fecilitate</button>     
+      </div>
+      <div class="c4">
+        <button data-modal-trigger="form-modal3" class="form__btn form__btn --secondary">Donate</button>     
+      </div>
+    </div>-->
+  </section>
+  <section class="form">    
+    <div class="modal" data-modal-name="form-modal">
+      <div class="modal__dialog">
+        <button class="modal__close" data-modal-dismiss>×</button>        
+          <div class="modal__content">
+            <div class="form__container">  
+              <div class="logo"><img src="images/hero/logo.webp" alt=""></div>   
+              <h1>Being Academy - Participation Form</h1>
+              <p><span>Colloborate </span><br/>Great ! We would be happy to have more facilitators with us. Please share more details to take it forward.</p>            
+              <form action="" method="post">              
+                <table>
+                  <tr>
+                    <td>Name</td>
+                    <td><input type="text" id="fname" name="firstname" placeholder="First Name" required></td>
+                  </tr>
+                  <tr>
+                    <td>Age</td>
+                    <td><input type="text" id="age" name="age" placeholder="Your Age" required></td>
+                  </tr>
+                  <tr>
+                    <td>Mobile number</td>
+                    <td><input name="phone" type="number" pattern="[6-9]{1}[0-9]{9}" class="form-control" placeholder="Phone*" required></td>
+                  </tr>
+                  <tr>
+                    <td>Gender</td>
+                    <td>
+                      <input type="radio" name="gender" value="male"required><br>
+                      <label for="male">Male</label>
+                      <input type="radio" name="gender" value="female"><br>
+                      <label for="female">Female</label>
+                      <input type="radio" name="gender" value="other">
+                      <label for="other">Other</label>         
+                    </td>              
+                  </tr>   
+                  <tr>
+                    <td>
+                      Current Engagement 
+                    </td>
+                    <td>
+                      <input type="radio" name="profession" value="profession" required><br>
+                      <label for="profession">Profession</label>
+                      <input type="radio" name="profession" value="work"> <br>
+                      <label for="work">work</label>
+                      <input type="radio" name="profession" value="studies">
+                      <label for="studies">Studies</label>                
+                    </td>
+                  </tr>  
+                  <tr>
+                    <td>Kindly share details about how would you like to collaborate ? in what capacity ?</td>                   
+                    <td><textarea id="message" name="message" placeholder="Your Answer" required></textarea></td>       
+                  </tr> 
+                  <tr>
+                    <td>You plan to collaborate as :</td>
+                    <td>
+                      <input type="radio" name="collaborate" value="individual" required><br>
+                      <label for="individual">individual</label>
+                      <input type="radio" name="collaborate" value="group"> <br>
+                      <label for="work">Group</label>
+                      <input type="radio" name="collaborate" value="org">
+                      <label for="org">Organization</label>   
+                      <input type="radio" name="collaborate" value="others">
+                      <label for="others">Others</label>               
+                    </td>
+                  </tr>   
+                  <tr>
+                    <td>What interests you to collaborate with EKF ?</td>                   
+                    <td><textarea id="message" name="interests" placeholder="Your Answer" required></textarea></td>       
+                  </tr> 
+                  <tr>
+                    <td>Do you have any expectations from EKF , in lieu of collaboration ?</td>                   
+                    <td><textarea id="message" name="expectations" placeholder="Your Answer" required></textarea></td>       
+                  </tr>               
+                </table>                
+                <button type="submit" class="button1">Submit</button>  
+                <button type="reset" class="button1">Reset</button>   
+              </form>    
+          </div>   
+        </div> 			
+      </div>        
+    </div>
+  </div>  
+    <!--<div id="link__popup35" class="popup__overlay">
+      <div class="link__popup">             
+        <div class="popup__content">  
+          <div class="form__container">   
+            <div class="logo"><img src="images/hero/" alt=""></div>  
+            <h1>Being Academy - Participation Form</h1>
+            <p>Learners <br/>Please share more details about your life journey and experiences to help us understand you better.. </p>
+            <a class="popup__close1" href="#">&times;</a>  
+            <form action="" method="post">
+              <div class="column5">
+                <table>
+                  <tr>
+                    <td>Name</td>
+                    <td><input type="text" id="fname" name="firstname" placeholder="First Name" required></td>
+                  </tr>
+                  <tr>
+                    <td>Age</td>
+                    <td><input type="text" id="age" name="age" placeholder="Your Age" required></td>
+                  </tr>
+                  <tr>
+                    <td>Mobile number</td>
+                    <td><input name="phone" type="number" pattern="[6-9]{1}[0-9]{9}" class="form-control" placeholder="Phone*" required></td>
+                  </tr>
+                  <tr>
+                    <td>Gender</td>
+                    <td>
+                      <input type="radio" name="gender" value="male"required><br>
+                      <label for="male">Male</label>
+                      <input type="radio" name="gender" value="female"><br>
+                      <label for="female">Female</label>
+                      <input type="radio" name="gender" value="other">
+                      <label for="other">Other</label>               
+                    </td>              
+                  </tr>            
+                  <tr>
+                    <td>Address</td>
+                    <td> <textarea id="message" name="address" placeholder="Please Type Your Address" required></textarea></td>
+                  </tr> 
+                  <tr>
+                    <td>
+                      Current Engagement 
+                    </td>
+                    <td>
+                      <input type="radio" name="profession" value="profession" required><br>
+                      <label for="profession">Profession</label>
+                      <input type="radio" name="profession" value="work"> <br>
+                      <label for="work">work</label>
+                      <input type="radio" name="profession" value="studies">
+                      <label for="studies">Studies</label>                
+                    </td>
+                  </tr>               
+                  <tr>
+                    <td>Kindly Share in brief Your life's Journey so far</td>
+                    <td><textarea id="message" name="message" placeholder="Type Your Message" required></textarea></td>               
+                  </tr>
+                  <tr>
+                    <td>What are your current challenges, wonders or questions in life ?</td>
+                    <td><textarea id="message" name="message" placeholder="Type here" required></textarea></td>  
+                  </tr>
+                  <tr>
+                    <td>Share any one thing that you've been pursuing or exploring for a long time (more than a year at least...)</td>
+                    <td><textarea id="message" name="message" placeholder="Write here" required></textarea></td> 
+                  </tr>
+                  <tr>
+                    <td>How do you look at the world today ?</td>
+                    <td><textarea id="message" name="message" placeholder="Write here" required></textarea></td> 
+                  </tr>
+                  <tr>
+                    <td>What do you think are major issues today ?</td>
+                    <td><textarea id="message" name="message" placeholder="Write here" required></textarea></td> 
+                  </tr>
+                </table>
+              </div>
+              <div class="column6">
+                <table>                
+                  <tr>
+                    <td>Amongst the above, what is that one issue that you wish to engage with to at least try and seek solution or answers...</td>
+                    <td><textarea id="message" name="message" placeholder="Write here" required></textarea></td> 
+                  </tr>
+                  <tr>
+                    <td>What interested you to join being academy?</td>
+                    <td><textarea id="message" name="message" placeholder="Write here" required></textarea></td> 
+                  </tr>
+                  <tr>
+                    <td>Will you be able to participate full time in this course ? (15 months program)</td>
+                    <td>
+                      <input type="radio" name="yes" value="yes" required>
+                      <label for="yes">Yes</label><br>
+                      <input type="radio" name="yes" value="no">
+                      <label for="no">No</label><br>
+                      <input type="radio" name="yes" value="may be">
+                      <label for="may be">May Be</label><br>
+                      <input type="radio" name="yes" value="Other">
+                      <label for="other">Other</label>                     
+                    </td> 
+                  </tr>
+                  <tr>
+                    <td>How did you get to know about this course ?</td>
+                    <td>
+                      <input type="radio" name="social" value="friends" required>
+                      <label for="friends">Friends</label><br>
+                      <input type="radio" name="social" value="whatsapp">
+                      <label for="whatsapp">Whatsapp</label><br>
+                      <input type="radio" name="social" value="youtube">
+                      <label for="youtube">Youtube</label><br>
+                      <input type="radio" name="social" value="facebook">
+                      <label for="facebook">Facebook</label><br>
+                      <input type="radio" name="social" value="instagram">
+                      <label for="instagram">Instagram</label><br>
+                      <input type="radio" name="social" value="other">
+                      <label for="other">Other</label>                      
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Will you be able to contribute financially ?</td>
+                    <td>
+                      <input type="radio" name="pay" value="yes" required>
+                      <label for="yes">Yes, I can pay for myself and may be support others if needed</label><br>
+                      <input type="radio" name="pay" value="yes">
+                      <label for="yes">Yes, I can pay for myself</label><br>
+                      <input type="radio" name="pay" value="no">
+                      <label for="no">No, I need partial sponsorship</label><br>
+                      <input type="radio" name="pay" value="no">
+                      <label for="no">No, I need full sponsorship</label><br>
+                      <input type="radio" name="pay" value="not"><br>
+                      <label for="not">Not sure yet</label><br>
+                      <input type="radio" name="pay" value="other">
+                      <label for="other">Other</label>                     
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Do you have any questions for us or any concerns or feedbacks ?</td>
+                    <td><textarea id="message" name="message" placeholder="Write here" required></textarea></td> 
+                  </tr>
+                </table> 
+              </div>              
+              <button type="submit" class="button1">Submit</button>  
+              <button type="reset" class="button1">Reset</button>   
+            </form>    
+          </div>   
+        </div>
+      </div>   
+    </div> -->  
+    <div class="modal" data-modal-name="form-modal1">
+      <div class="modal__dialog">
+        <button class="modal__close" data-modal-dismiss>×</button>        
+        <div class="modal__content">
+          <div class="form__container"> 
+            <div class="logo"><img src="images/hero/logo.webp" alt=""></div>    
+            <h1>Being Academy - Participation Form</h1>
+            <p>Volunteer <br/>Thank you for showing interest in being a volunteer. <br>Please help us with some more details.</p>           
+            <form action="" method="post">
+              <div class="column5">
+                <table>
+                  <tr>
+                    <td>Name</td>
+                    <td><input type="text" id="fname" name="firstname" placeholder="First Name" required></td>
+                  </tr>
+                  <tr>
+                    <td>Age</td>
+                    <td><input type="text" id="age" name="age" placeholder="Your Age" required></td>
+                  </tr>
+                  <tr>
+                    <td>Mobile number</td>
+                    <td><input name="phone" type="number" pattern="[6-9]{1}[0-9]{9}" class="form-control" placeholder="Phone*" required></td>
+                  </tr>
+                  <tr>
+                    <td>Gender</td>
+                    <td>
+                      <input type="radio" name="se" value="male"required><br>
+                      <label for="male">Male</label>
+                      <input type="radio" name="sex" value="female"><br>
+                      <label for="female">Female</label>
+                      <input type="radio" name="sex" value="other">
+                      <label for="other">Other</label>                                 
+                    </td>              
+                  </tr>   
+                  <tr>
+                    <td>
+                      Current Engagement 
+                    </td>
+                    <td>
+                      <input type="radio" name="profession" value="profession" required><br>
+                      <label for="profession">Profession</label>
+                      <input type="radio" name="profession" value="work"> <br>
+                      <label for="work">work</label>
+                      <input type="radio" name="profession" value="studies">
+                      <label for="studies">Studies</label>                
+                    </td>
+                  </tr>               
+                  <tr>
+                    <td>What are your key skills or areas you'd like to contribute in ?</td>
+                    <td><textarea id="message" name="skills" placeholder="Your Answer" required></textarea></td>               
+                  </tr>
+                </table>
+              </div>
+              <div class="column6">
+                <table>
+                  <tr>
+                    <td>What is your preferred type of volunteering ?</td>
+                    <td> 
+                      <input type="radio" name="working" value="fulltime" required>
+                      <label for="fulltime">Full time (5-8 hours per day, 5 days a week)</label>
+                      <input type="radio" name="working" value="parttime" required>
+                      <label for="parttime">Part time (15-20 hours per week)</label>
+                      <input type="radio" name="working" value="hours" required>
+                      <label for="hours">Only on need basic (5-10 hours per week)</label>
+                      <input type="radio" name="working" value="urgent" required>
+                      <label for="fulltime">Urgent only (5-10 hours a month)</label>
+                      <input type="radio" name="working" value="notsure" required>
+                      <label for="notsure">Not sure, would like to discuss</label>
+                      <input type="radio" name="working" value="other">
+                      <label for="other">Other</label>     
+                    </td>                   
+                  </tr>
+                  <tr>
+                  <td>Do you expect some stipend ?</td>
+                    <td>
+                    <input type="radio" name="stipend" value="yes" required>
+                    <label for="yes">Yes, some stipend would be good.</label>
+                    <input type="radio" name="stipend" value="no" required>
+                    <label for="no">No, I wish to do it pro-bono.</label>
+                    <input type="radio" name="stipend" value="maybe" required>
+                    <label for="maybe">May be</label>
+                    <input type="radio" name="stipend" value="other" required>
+                    <label for="other">Other</label>                    
+                    </td>
+                </tr>
+                  <tr>
+                    <td>Kindly share some of your earlier volunteering experience (if any) ?</td>
+                    <td><textarea id="message" name="message" placeholder="share here" required></textarea></td>
+                  </tr> 
+                <tr>
+                    <td>Kindly select key areas where you can help , if needed -</td>                  
+                    <td>
+                      <input type="checkbox" name="areas" value="social" required>
+                      <label for="social">Social Media Handling / Marketing</label>
+                      <input type="checkbox" name="areas" value="event">
+                      <label for="event">Event Management.</label>
+                      <input type="checkbox" name="areas" value="logistics">
+                      <label for="logistics">Logistics</label>
+                      <input type="checkbox" name="areas" value="editing">
+                      <label for="editing">Writing / Editing / Proof reading</label>
+                      <input type="checkbox" name="areas" value="web">
+                      <label for="web">Website / App development or maintenance</label>
+                      <input type="checkbox" name="areas" value="poster">
+                      <label for="poster">Poster making and related creative working</label>
+                      <input type="checkbox" name="areas" value="tranlation">
+                      <label for="tranlation">Translations</label>
+                      <input type="checkbox" name="areas" value="field">
+                      <label for="field">Field work - travelling, meeting people etc.</label>
+                      <input type="checkbox" name="areas" value="film">
+                      <label for="film">Film Making.</label>
+                      <input type="checkbox" name="areas" value="document">
+                      <label for="document">Documenting and organizing (data management)</label>
+                      <input type="checkbox" name="areas" value="other">
+                      <label for="other">Other.</label>
+                    </td>                 
+                </tr>            
+                </table> 
+              </div>           
+              <button type="submit" class="button1">Submit</button>  
+              <button type="reset" class="button1">Reset</button>   
+            </form>    
+          </div>   
+        </div>        
+      </div>   
+    </div>
+    <div class="modal" data-modal-name="form-modal2">
+      <div class="modal__dialog">
+        <button class="modal__close" data-modal-dismiss>×</button>        
+        <div class="modal__content"> 
+          <div class="form__container"> 
+            <div class="logo"><img src="images/hero/logo.webp" alt=""></div>    
+            <h1>Being Academy - Participation Form</h1>
+            <p>Facilitator <br/>Great ! We would be happy to have more facilitators with us. Please share more details to take it forward.</p>
+            <a class="popup__close1" href="#close">&times;</a>  
+            <form action="" method="post">
+              <div class="column5">
+                <table>
+                  <tr>
+                    <td>Name</td>
+                    <td><input type="text" id="fname" name="firstname" placeholder="First Name" required></td>
+                  </tr>
+                  <tr>
+                    <td>Age</td>
+                    <td><input type="text" id="age" name="age" placeholder="Your Age" required></td>
+                  </tr>
+                  <tr>
+                    <td>Mobile number</td>
+                    <td><input name="phone" type="number" pattern="[6-9]{1}[0-9]{9}" class="form-control" placeholder="Phone*" required></td>
+                  </tr>
+                  <tr>
+                    <td>Gender</td>
+                    <td>
+                      <input type="radio" name="gender" value="male"required><br>
+                      <label for="male">Male</label>
+                      <input type="radio" name="gender" value="female"><br>
+                      <label for="female">Female</label>
+                      <input type="radio" name="gender" value="other">
+                      <label for="other">Other</label>         
+                    </td>              
+                  </tr>   
+                  <tr>
+                    <td>
+                      Current Engagement 
+                    </td>
+                    <td>
+                      <input type="radio" name="profession" value="profession" required><br>
+                      <label for="profession">Profession</label>
+                      <input type="radio" name="profession" value="work"> <br>
+                      <label for="work">work</label>
+                      <input type="radio" name="profession" value="studies">
+                      <label for="studies">Studies</label>                
+                    </td>
+                  </tr> 
+                  </table>
+              </div>
+              <div class="column6">
+                <table>             
+                  <tr>
+                    <td>What would like to do as a facilitator ? What areas interest you ?</td>
+                    <td><textarea id="message" name="message" placeholder="Your Answer" required></textarea></td>               
+                  </tr>
+                  <tr>
+                    <td>Kindly share any past experiences or associations as a facilitator ?</td>
+                    <td><textarea id="message" name="message" placeholder="Your Answer" required></textarea></td>               
+                  </tr>                
+                  <tr>
+                    <td>Kindly share your financial expectations ?</td>
+                    <td> 
+                      <input type="radio" name="finance" value="work" required>
+                      <label for="wrok">I expect some honorarium for my work.</label>
+                      <input type="radio" name="finance" value="travel" required>
+                      <label for="travel">I only expect my travel, food and accomodation to be taken care of.</label>
+                      <input type="radio" name="finance" value="support" required>
+                      <label for="support">I do not expect any kind of financial support from EKF</label>                  
+                      <input type="radio" name="finance" value="other">
+                      <label for="other">Other</label>     
+                    </td>                   
+                  </tr>
+                  <tr>
+                    <td>Kindly share your availability ?</td>
+                    <td>
+                      <input type="radio" name="availability" value="yes" required>
+                      <label for="yes">Available full time as per the need of the program.</label>
+                      <input type="radio" name="availability" value="no" required>
+                      <label for="no">Available only for online sessions.</label>
+                      <input type="radio" name="availability" value="maybe" required>
+                      <label for="maybe">Available only on certains locations and certains days.</label>
+                      <input type="radio" name="availability" value="other" required>
+                      <label for="other">Not sure, can be discussed</label>                    
+                    </td>
+                  </tr>               
+                </table>  
+              </div>
+              <button type="submit" class="button1">Submit</button>  
+              <button type="reset" class="button1">Reset</button>   
+            </form>    
+          </div>   
+        </div>
+      </div>   
+    </div> 
+  </section>
+  <!--footer--> 
+	<footer>
+    <div class="footer__container">
+      <h2>Subscribe</h2>
+      <p>Please sign up to receive what ever we write</p>
+      <form id="my-form" method="POST" action="/jinan sir/beingacademy/subscribe.php">
+        <input type="text" id="fname" name="firstname" placeholder="First Name" required>
+        <input type="text" id="lname" name="lastname" placeholder="Last Name" required>
+        <input type="email" id="email" name="Email" placeholder="Email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" size="30" required>
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </form>
+      <div class="footer__nav">
+        <ul class="nav__items">
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Volunteer</a></li>
+          <li><a href="#">Links</a></li>
+          <li><a href="#">Donate</a></li>
+          <li><a href="#">Contact us</a></li>
+        </ul>
+      </div>
+      <div class="social__menu">        
+        <a href="https://www.facebook.com/" target="blank"><img src="images/social/fb.svg" alt="" class="fb"></a>
+        <a href="https://www.twitter.com/" target="blank"><img src="images/social/tw.svg" alt="" class="twitter"></a>
+        <a href="https://www.opensea.io/" target="blank"><img src="images/social/insta.svg" alt="" class="insta"></a>
+        <a href="https://www.whatsapp.com/" target="blank"><img src="images/social/wp.svg" alt="" class="whatsapp"></a>       
+      </div>
+    </div>
+	</footer>
+  <!--<div class="footer__copyright">
+    <p>being Academy &copy; <script>document.write(new Date().getFullYear())</script>  All Rights Reserved</p>
+  </div>-->
+  <a href="#top" class="top">Top</a>
+  <!--footer_End-->
+  <!--js_Scripts-->
+	<script type="text/javascript" src="js/jquery-3.6.3.min.js"></script>	
+  <script type="text/javascript" src="js/index.js"></script>	 
+</body>
+</html>
+
+

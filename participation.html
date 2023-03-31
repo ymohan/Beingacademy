@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>participation Form</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main>
+    <section class="form">      
+      <div class="form__container">     
+        <h1>Being Academy - Participation Form</h1>
+        <p>Learners <br/>Please share more details about your life journey and experiences to help us understand you better.. </p>
+        <form action="" method="post">
+          <table>
+            <tr>
+              <td>Name</td>
+              <td><input type="text" id="fname" name="firstname" placeholder="First Name" required></td>
+            </tr>
+            <tr>
+              <td>Age</td>
+              <td><input type="text" id="age" name="age" placeholder="Your Age" required></td>
+            </tr>
+            <tr>
+              <td>Mobile number</td>
+              <td><input name="phone" type="number" pattern="[6-9]{1}[0-9]{9}" class="form-control" placeholder="Phone*" required></td>
+            </tr>
+            <tr>
+              <td>Gender</td>
+              <td>
+                <input type="radio" name="gender" value="male"required><br>
+                <label for="male">Male</label>
+                <input type="radio" name="gender" value="female"><br>
+                <label for="female">Female</label>
+                <input type="radio" name="gender" value="other">
+                <label for="other">Other</label>               
+              </td>              
+            </tr>            
+            <tr>
+              <td>Address</td>
+              <td> <textarea id="message" name="address" placeholder="Please Type Your Address" required></textarea></td>
+            </tr> 
+            <tr>
+              <td>
+                Current Engagement 
+              </td>
+              <td>
+                <input type="radio" name="profession" value="profession" required><br>
+                <label for="profession">Profession</label>
+                <input type="radio" name="profession" value="work"> <br>
+                <label for="work">work</label>
+                <input type="radio" name="profession" value="studies">
+                <label for="studies">Studies</label>                
+              </td>
+            </tr> 
+          
+            <tr>
+              <td>Kindly Share in brief Your life's Journey so far</td>
+              <td><textarea id="message" name="message" placeholder="Type Your Message" required></textarea></td>               
+            </tr>
+            <tr>
+              <td>What are your current challenges, wonders or questions in life ?</td>
+              <td><textarea id="message" name="message" placeholder="Type here" required></textarea></td>  
+            </tr>
+            <tr>
+              <td>Share any one  thing that you've been pursuing or exploring for a long time <br>(more than a year at least...)</td>
+                
+            </tr>
+            <tr>
+              <td>How do you look at the world today ?</td>
+              <td><textarea id="message" name="message" placeholder="Write here" required></textarea></td> 
+            </tr>
+            <tr>
+              <td>What do you think are major issues today ?</td>
+              <td><textarea id="message" name="message" placeholder="Write here" required></textarea></td> 
+            </tr>
+            <tr>
+              <td>Amongst the above, what is that one issue that you wish to engage with to at least try and seek solution or answers...</td>
+              <td><textarea id="message" name="message" placeholder="Write here" required></textarea></td> 
+            </tr>
+            <tr>
+              <td>What interested you to join being academy?</td>
+              <td><textarea id="message" name="message" placeholder="Write here" required></textarea></td> 
+            </tr>
+            <tr>
+              <td>Will you be able to participate full time in this course ? (15 months program)</td>
+              <td>
+                <input type="radio" name="yes" value="yes" required>
+                <label for="yes">Yes</label><br>
+                <input type="radio" name="yes" value="no">
+                <label for="no">No</label><br>
+                <input type="radio" name="yes" value="may be">
+                <label for="may be">May Be</label><br>
+                <input type="radio" name="yes" value="Other">
+                <label for="other">Other</label>
+                <div class="h-divider1">
+                  <div class="shadow"></div>
+                </div>
+              </td> 
+            </tr>
+            <tr>
+              <td>How did you get to know about this course ?</td>
+              <td>
+                <input type="radio" name="social" value="friends" required>
+                <label for="friends">Friends</label><br>
+                <input type="radio" name="social" value="whatsapp">
+                <label for="whatsapp">Whatsapp</label><br>
+                <input type="radio" name="social" value="youtube">
+                <label for="youtube">Youtube</label><br>
+                <input type="radio" name="social" value="facebook">
+                <label for="facebook">Facebook</label><br>
+                <input type="radio" name="social" value="instagram">
+                <label for="instagram">Instagram</label><br>
+                <input type="radio" name="social" value="other">
+                <label for="other">Other</label>
+                <div class="h-divider1">
+                  <div class="shadow"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>Will you be able to contribute financially ?</td>
+              <td>
+                <input type="radio" name="pay" value="yes" required>
+                <label for="yes">Yes, I can pay for myself and may be support others if needed</label><br>
+                <input type="radio" name="pay" value="yes">
+                <label for="yes">Yes, I can pay for myself</label><br>
+                <input type="radio" name="pay" value="no">
+                <label for="no">No, I need partial sponsorship</label><br>
+                <input type="radio" name="pay" value="no">
+                <label for="no">No, I need full sponsorship</label><br>
+                <input type="radio" name="pay" value="not"><br>
+                <label for="not">Not sure yet</label><br>
+                <input type="radio" name="pay" value="other">
+                <label for="other">Other</label>
+                <div class="h-divider1">
+                  <div class="shadow"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>Do you have any questions for us or any concerns or feedbacks ?</td>
+              <td><textarea id="message" name="message" placeholder="Write here" required></textarea></td> 
+            </tr>
+          </table>  
+          <button type="submit" class="button">Submit</button>  
+          <button type="reset" class="button">Reset</button>   
+        </form>    
+      </div>         
+    </section>
+  </main>                   
+</body>
+</html>
